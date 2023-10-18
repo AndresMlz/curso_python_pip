@@ -10,7 +10,8 @@ def generate_piechart(labels, values):
   fig, ax = plt.subplots()
   ax.pie(values, labels=labels)
   ax.axis('equal')
-  plt.show()
+  plt.savefig('piechart_pop')
+  plt.close()
 
 if __name__ == '__main__':
   labels = ['W', 'L', 'B']
