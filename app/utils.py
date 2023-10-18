@@ -4,6 +4,7 @@ def clear_data(x):
                  '2015 Population', '2010 Population', 
                  '2000 Population', '1990 Population', 
                  '1980 Population', '1970 Population']
+  data = {}
   new_data = data[x]
   print(new_data)
   print('~~~~~~~~')
