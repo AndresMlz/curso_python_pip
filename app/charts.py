@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 def generate_barchart(labels, values):
   fig, ax = plt.subplots()
   ax.bar(labels, values)
-  plt.show()
+  plt.savefig('barchart_pop')
+  plt.close()
 
 def generate_piechart(labels, values):
   fig, ax = plt.subplots()
