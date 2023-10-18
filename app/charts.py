@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 
-def generate_barchart(labels, values):
+def generate_barchart(name, labels, values):
   fig, ax = plt.subplots()
   ax.bar(labels, values)
-  plt.savefig('barchart_pop.png')
+  plt.savefig(f'./imgs/{name}_pop.png')
   plt.close()
 
 def generate_piechart(labels, values):

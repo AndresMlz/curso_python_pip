@@ -22,7 +22,7 @@ def barchart(data):
   country_dic = utils.population_by_country(country, data)
   res = country_dic[0]
   years, pop = utils.get_pop_by_country(res)
-  charts.generate_barchart(years, pop)
+  charts.generate_barchart(country, years, pop)
   
 def data_for_pie(data):
   print('Generating chart...')
