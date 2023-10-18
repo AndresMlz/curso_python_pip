@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 def generate_barchart(labels, values):
   fig, ax = plt.subplots()
   ax.bar(labels, values)
-  plt.savefig('barchart_pop')
+  plt.savefig('barchart_pop.png')
   plt.close()
 
 def generate_piechart(labels, values):
   fig, ax = plt.subplots()
   ax.pie(values, labels=labels)
   ax.axis('equal')
-  plt.savefig('piechart_pop')
+  plt.savefig('piechart_pop.png')
   plt.close()
 
 if __name__ == '__main__':
